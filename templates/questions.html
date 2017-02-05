@@ -1,0 +1,27 @@
+<div id="chartdiv" ng-show="!show_ques"></div>
+
+
+
+<div ng-show="show_ques">
+	<h1> {{current_question.que}} </h1>
+
+<div ng-show="current_question.img">
+
+<img ng-src="{{current_question.img}}" width="100%" height="300px">
+</div>
+	
+
+<div class="parent">
+  <md-button class="md-raised md-primary bubble" ng-click="fetch_next(0)"> {{current_question.options[0]}} </md-button>   <md-button class="md-raised md-primary  bubble" ng-click="fetch_next(1)">{{current_question.options[1]}}</md-button>
+
+<div class="child" ng-class="{'box': boxClass, 'circle': !boxClass} ">
+  </div>
+
+</div>
+  
+</div>
+
+
+<button type="button" class="btn btn-primary" ng-click="show_report()" ng-show="!show_ques">Click to see the complete report</button>
+
+

@@ -1,0 +1,18 @@
+
+
+
+
+
+<h1> Quiz Competition </h1>
+
+<form name="input_form" ng-submit="show_questions(input_form.$valid)" novalidate>
+<div class="form-group mar-top">
+    <label for="name">Provide Details:</label>
+    <input type="text" class="form-control start_input" id="name" ng-model="name" name="user" placeholder="Name" required>
+
+    <p ng-show="invalid"> * Name is Compulsory </p>
+
+         
+</div>
+<md-button type="submit" class="md-raised md-warn" >Click to Enter</md-button>
+</form>
